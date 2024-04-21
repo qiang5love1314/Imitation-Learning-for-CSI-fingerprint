@@ -16,7 +16,6 @@ import torch
 import utils
 from torch.utils.data import DataLoader
 import time
-
 stateFile = "state-200_NN200.mat"
 rewardFile = "reward-200_NN200.mat"
 
