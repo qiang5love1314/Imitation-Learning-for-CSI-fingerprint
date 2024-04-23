@@ -1,3 +1,4 @@
+Python version == 3.6.8
 numpy == 1.19.5
 scipy == 1.5.4
 scikit-learn == 0.24.2
