@@ -43,11 +43,11 @@ n_neighbors: Number of neighbors for KNN (default is 5).
 If you use this work for your research, you may want to cite
 
 ```
-@article{zhu2021bls,
+@article{zhu2024dynamic,
   title={{Dynamic Radio Map Construction with Minimal Manual Intervention: A State Space Model-Based Approach with Imitation Learning}},
   author={Zhu, Xiaoqiang and Qiu, Tie and Qu, Wenyu and Zhou, Xiaobo and Shi, Tuo and Xu, Tianyi},
   journal={IEEE Transactions on Big Data},
-  pages={1--13},
+  pages={1--14},
   year={2024}
 }
 ```
