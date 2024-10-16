@@ -1,6 +1,6 @@
 # Imitation-Learning-for-CSI-fingerprint
  
-This repository contains the code for a submitted paper to the IEEE journal, and the codes are only available to the editors and reviewers.
+This repository contains the code for a submitted paper to the IEEE TBD.
 
 # Dependencies
 Before using this code, you need to install the following dependencies:
@@ -39,3 +39,15 @@ n_neighbors: Number of neighbors for KNN (default is 5).
 
 ## License
 [MIT](LICENSE) © Xiaoqiang Zhu
+
+If you use this work for your research, you may want to cite
+
+```
+@article{zhu2021bls,
+  title={{Dynamic Radio Map Construction with Minimal Manual Intervention: A State Space Model-Based Approach with Imitation Learning}},
+  author={Zhu, Xiaoqiang and Qiu, Tie and Qu, Wenyu and Zhou, Xiaobo and Shi, Tuo and Xu, Tianyi},
+  journal={IEEE Transactions on Big Data},
+  pages={1--13},
+  year={2024}
+}
+```
