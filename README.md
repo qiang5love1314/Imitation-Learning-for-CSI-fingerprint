@@ -1,6 +1,16 @@
 # Imitation-Learning-for-CSI-fingerprint
- 
-This repository contains the code for a submitted paper to the IEEE TBD.
+## Overview  
+This repository contains the implementation of the **algorithm** described in our paper: *"Dynamic Radio Map Construction with Minimal Manual Intervention: A State Space Model-Based Approach with Imitation Learning"*. It combines **imitation learning**, **Gaussian process modeling**, and **state space modeling** to construct and update a highly accurate radio map with minimal manual intervention, enabling efficient and real-time localization.  
+
+## Abstract  
+Traditional fingerprint localization methods rely heavily on manual labor to collect data from various scenarios, which is time-consuming and inefficient. Existing path planning strategies attempt to reduce this burden but often fall short due to local optimization and high computational costs.  
+
+To address these limitations, ILRM introduces a novel approach that integrates:  
+- **Multivariate Gaussian process modeling** to fit a rough fingerprint database using only a few pilot data points.  
+- **State space modeling** to calculate the variation range of pilot data, forming a CSI error band to filter and refine the rough radio map.  
+- **Imitation learning** and a confidence coefficient to predict and calibrate the global CSI data distribution.  
+
+Experimental results demonstrate that ILRM outperforms state-of-the-art algorithms in most test cases, achieving low computational complexity, reduced localization error, and significant savings in manual workload.  
 
 # Dependencies
 Before using this code, you need to install the following dependencies:
@@ -25,17 +35,12 @@ Here is a GIF to show the process of dynamically searching for the optimal path.
 </p>
 <p align="left">Figure 1: Searching the optimal path. &nbsp;&nbsp; Figure 2: The corresponding result.</p>
 
-## Arguments
-```
-iterations: Number of training iterations (default is 100).
-learning_rate: Learning rate for the optimizer (default is 1e-2).
-input_dim: Dimension of the input data (default is 32).
-hidden_dim: Dimension of the hidden layers in the model (default is 64).
-latent_dim: Dimension of the latent space in the model (default is 32).
-num_segments: Number of segments to divide the time series into (default is 10).
-step_length: Number of the maximum exploration step length (default is 100).
-n_neighbors: Number of neighbors for KNN (default is 5).
-```
+## Results  
+Key findings from our experiments include:  
+- **Reduced Manual Effort**: ILRM saves **73.3%** of the manual workload compared to traditional fingerprint collection methods.  
+- **High Localization Accuracy**: Outperforms state-of-the-art algorithms with consistently lower localization errors.  
+- **Low Computational Complexity**: Efficiently processes large-scale data in dynamic environments.  
+
 
 ## License
 [MIT](LICENSE) © Xiaoqiang Zhu
@@ -48,6 +53,7 @@ If you use this work for your research, you may want to cite
   author={Zhu, Xiaoqiang and Qiu, Tie and Qu, Wenyu and Zhou, Xiaobo and Shi, Tuo and Xu, Tianyi},
   journal={IEEE Transactions on Big Data},
   pages={1--14},
-  year={2024}
+  year={2024},
+  doi={10.1109/TBDATA.2024.3489425}
 }
 ```
